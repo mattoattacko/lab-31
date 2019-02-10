@@ -76,7 +76,8 @@ Created with CodeSandbox
 ##### Exported Values and Methods
 
 ###### `export default()`
-<- state, action   -> if CHANGENAME, returns name || Math.random()    -> if DEFAULT, returns state
+* if CHANGENAME, returns name || Math.random()    
+* if DEFAULT, returns state
 
 #### `store/app-actions.js`
 ##### Exported Values and Methods
