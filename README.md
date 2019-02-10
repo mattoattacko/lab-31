@@ -22,24 +22,16 @@ Created with CodeSandbox
 -> div
 
 ###### `mapStateToProps(state)`
-<- state
-
--> stuff: state.someStuff
+<- state   -> stuff: state.someStuff
 
 ###### `mapDispatchToProps(dispatch, getState)`
-<- dispatch, getState
-
--> handleChange
+<- dispatch, getState    -> handleChange
 
 #### `store/actions.js`
 ##### Exported Values and Methods
 
 ###### `changer(payload)`
-<- payload
-
--> type: 'CHANGE'
-
--> payload
+<- payload    -> type: 'CHANGE'   -> payload
 
 #### `store/index.js`
 ##### Exported Values and Methods
@@ -51,11 +43,7 @@ Created with CodeSandbox
 ##### Exported Values and Methods
 
 ###### `export default()`
-<- state, action
-
--> if CHANGE, returns foo
-
--> if DEFAULT, returns state
+<- state, action    -> if CHANGE, returns foo    -> if DEFAULT, returns state
 
 ## Assignment 2
 
@@ -69,57 +57,37 @@ Created with CodeSandbox
 ##### Exported Values and Methods
 
 ###### `Class App -> <div>`
--> div
-
--> Numbers Component
+-> div    -> Numbers Component
 
 ###### `mapStateToProps(state)`
-<- state
-
--> app: state.app
+<- state      -> app: state.app
 
 ###### `mapDispatchToProps(dispatch, getState)`
-<- dispatch, getState
-
--> handleChange
+<- dispatch, getState     -> handleChange
 
 #### `components/numbers.js`
 ##### Exported Values and Methods
 
 ###### `Class Numbers`
--> div
-
--> button
+-> div     -> button
 
 ###### `mapStateToProps(state)`
-<- state
-
--> numbers: state.numbers
+<- state   -> numbers: state.numbers
 
 ###### `mapDispatchToProps(dispatch, getState)`
-<- dispatch, getState
-
--> handleNumChange
-
--> handleNumReset
+<- dispatch, getState  -> handleNumChange    -> handleNumReset
 
 #### `store/index.js`
 ##### Exported Values and Methods
 
 ###### `combineReducers()`
--> app
-
--> numbers
+-> app     -> numbers
 
 #### `store/app-reducers.js`
 ##### Exported Values and Methods
 
 ###### `export default()`
-<- state, action
-
--> if CHANGENAME, returns name || Math.random()
-
--> if DEFAULT, returns state
+<- state, action   -> if CHANGENAME, returns name || Math.random()    -> if DEFAULT, returns state
 
 #### `store/app-actions.js`
 ##### Exported Values and Methods
