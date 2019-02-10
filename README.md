@@ -13,37 +13,29 @@ Created with CodeSandbox
 ##### Exported Values and Methods
 
 ###### `Main() -> <Provider>`
--> App Component
+* The `app` component
 
 #### `components/app.js`
 ##### Exported Values and Methods
 
 ###### `Class App -> <div>`
--> div
+* Just the `div`
 
 ###### `mapStateToProps(state)`
-<- state   -> stuff: state.someStuff
+* If state then state.someStuff
 
 ###### `mapDispatchToProps(dispatch, getState)`
-<- dispatch, getState    -> handleChange
-
-#### `store/actions.js`
-##### Exported Values and Methods
-
-###### `changer(payload)`
-<- payload    -> type: 'CHANGE'   -> payload
-
-#### `store/index.js`
-##### Exported Values and Methods
+* handleChange
 
 ###### `combineReducers()`
--> someStuff
+* Does what it sounds like
 
 #### `store/reducers.js`
 ##### Exported Values and Methods
 
 ###### `export default()`
-<- state, action    -> if CHANGE, returns foo    -> if DEFAULT, returns state
+* If state, action have  CHANGE, it will return foo 
+* If state, action are DEFAULT, it will return state
 
 ## Assignment 2
 
@@ -51,37 +43,34 @@ Created with CodeSandbox
 ##### Exported Values and Methods
 
 ###### `Main() -> <Provider>`
--> App Component
+* Our App component
 
 #### `components/app.js`
 ##### Exported Values and Methods
 
 ###### `Class App -> <div>`
--> div    -> Numbers Component
+* We export into the app.js and render the div component
 
 ###### `mapStateToProps(state)`
-<- state      -> app: state.app
+* state.app
 
 ###### `mapDispatchToProps(dispatch, getState)`
-<- dispatch, getState     -> handleChange
+* handleChange
 
 #### `components/numbers.js`
 ##### Exported Values and Methods
 
 ###### `Class Numbers`
--> div     -> button
+* The button?
 
 ###### `mapStateToProps(state)`
-<- state   -> numbers: state.numbers
+* state.numbers
 
 ###### `mapDispatchToProps(dispatch, getState)`
-<- dispatch, getState  -> handleNumChange    -> handleNumReset
+* If dispatch, getState, it will handleNumChange, then handleNumReset
 
 #### `store/index.js`
 ##### Exported Values and Methods
-
-###### `combineReducers()`
--> app     -> numbers
 
 #### `store/app-reducers.js`
 ##### Exported Values and Methods
@@ -92,33 +81,11 @@ Created with CodeSandbox
 #### `store/app-actions.js`
 ##### Exported Values and Methods
 
-###### `nameChanger(payload)`
-<- payload
-
--> type: CHANGENAME
-
--> payload
-
-#### `store/numbers-reducers.js`
-##### Exported Values and Methods
-
-###### `export default()`
-<- state, action
-
--> if CHANGENAME, returns name || Math.random()
-
--> if RESET, returns initialState
-
--> if DEFAULT, returns state
-
-#### `store/numbers-actions.js`
-##### Exported Values and Methods
-
 ###### `numberChanger()`
--> type: CHANGENUM
+* CHANGENUM
 
 ###### `resetNumber()`
--> type: RESET
+* RESET
 
 #### Tests
-* 
+* Tests
