@@ -2,9 +2,9 @@
 Created with CodeSandbox
 
 ### Links and Resources
-* [Repo](http://xyz.com)
+* [Repo](https://github.com/mattoattacko/lab-31)
 * [Assignment One](https://codesandbox.io/s/ov7v3nqryy)
-* [Assignment Two](http://xyz.com)
+* [Assignment Two](https://codesandbox.io/s/ykv771r7mx)
 
 ### Modules
 #### `modulename.js`
